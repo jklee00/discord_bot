@@ -15,6 +15,7 @@ import requests
 #import youtube_dl
 #from music import music_cog
 
+#------------------------------------------------------------------#
 # Outputs debug output for library outputs (does not do HTTP requests)
 logger = logging.getLogger('discord')
 logger.setLevel(logging.DEBUG)
