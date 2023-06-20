@@ -41,7 +41,7 @@ intents.message_content = True
 bot = commands.Bot(command_prefix=DEFAULT_PREFIX, intents=intents)
 #bot.add_cog(music_cog(bot))
 
-
+#-----------------------------------------------------------------#
 #Create Events & Commands
 
 @bot.event
@@ -100,6 +100,7 @@ async def rand_error(ctx, error):
         await ctx.send('Number must be a natural number')
 
 
+#----------------------------------------------------------------------------#
 #Riot API commands
 
 TOKEN_RIOT = "Riot API key goes here"
