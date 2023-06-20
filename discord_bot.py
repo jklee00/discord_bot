@@ -31,6 +31,7 @@ formatter = logging.Formatter('[{asctime}] [{levelname:<8}] {name}: {message}', 
 handler.setFormatter(formatter)
 logger.addHandler(handler)
 
+#---------------------------------------------------------------#
 #Set the default prefix for commands
 DEFAULT_PREFIX = '!'
 
@@ -250,6 +251,8 @@ async def status_error(ctx, error):
     if isinstance(error, commands.errors.MissingRequiredArgument):
         await ctx.send('Proper usage: !status {lol/tft/val}')
 '''
+
+#-------------------------------------------------------------------#
 
 #Token
 bot.run('Discord bot token goes here')
